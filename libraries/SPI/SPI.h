@@ -138,6 +138,8 @@ class SPIClass {
 
 #if SPI_INTERFACES_COUNT > 0
   extern SPIClass SPI;
+#else
+  extern SPIClass SPI;  // dummy
 #endif
 #if SPI_INTERFACES_COUNT > 1
   extern SPIClass SPI1;
